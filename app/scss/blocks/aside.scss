@@ -1,0 +1,166 @@
+.blog {
+	padding: 60px 0 100px;
+	// .blog__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .blog__items
+
+	&__items {
+	}
+
+	// .blog__category
+
+	&__category {
+		margin-bottom: 36px;
+	}
+
+	// .blog__category-tilte
+
+	&__category-tilte,
+	&__tags-title {
+		margin-bottom: 16px;
+		color: $title;
+		@extend %title-font;
+		line-height: 23px;
+	}
+
+	// .blog__category-list
+
+	&__category-list {
+	}
+
+	// .blog__category-item
+
+	&__category-item {
+		margin-bottom: 12px;
+	}
+
+	// .blog__category-link
+
+	&__category-link {
+		color: inherit;
+	}
+
+	// .blog__tags
+
+	&__tags {
+		margin-bottom: 50px;
+	}
+
+	// .blog__tags-link
+
+	&__tags-link {
+		color: #8f8d8d;
+		font-weight: 600;
+		font-size: 14px;
+		padding: 0 16px;
+		margin-bottom: 10px;
+		margin-right: 10px;
+		display: inline-block;
+		border: 1px solid rgba(#454647, 0.5);
+		border-radius: 14px;
+	}
+
+	// .blog__social
+
+	&__social {
+		display: flex;
+		gap: 20px;
+	}
+
+	// .blog__social-item
+
+	&__social-item {
+	}
+
+	// .blog__social-link
+
+	&__social-link {
+	}
+}
+
+.aside {
+	width: 350px;
+	margin-left: 30px;
+
+	// .aside__search
+
+	&__search {
+		position: relative;
+		margin-bottom: 40px;
+	}
+
+	// .aside__search-input
+
+	&__search-input {
+		padding: 6px 45px 6px 18px;
+		border: 1px solid rgba($title, 0.7);
+		border-radius: 20px;
+		display: block;
+		width: 100%;
+		&::placeholder {
+			font-family: "Open Sans", sans-serif;
+			font-size: 14px;
+			line-height: 27px;
+			font-weight: 400;
+			color: #a1a1a1;
+		}
+	}
+
+	// .aside__search-btn
+
+	&__search-btn {
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		top: 10px;
+		right: 13px;
+		cursor: pointer;
+	}
+}
+.recent-posts {
+	margin-bottom: 40px;
+	// .recent-posts__title
+
+	&__title {
+		margin-bottom: 24px;
+		color: $title;
+		@extend %title-font;
+		line-height: 23px;
+	}
+
+	// .recent-posts__list
+
+	&__list {
+	}
+
+	// .recent-posts__item
+
+	&__item {
+		margin-bottom: 11px;
+	}
+
+	// .recent-posts__item-title
+
+	&__item-title {
+		display: block;
+		color: inherit;
+	}
+
+	// .recent-posts__data
+
+	&__data,
+	&__autor {
+		color: #a1a1a1;
+		font-size: 14px;
+	}
+
+	// .recent-posts__autor
+
+	&__autor {
+	}
+}

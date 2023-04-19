@@ -1,0 +1,196 @@
+.blog {
+	// .blog__items
+
+	&__items {
+		max-width: 730px;
+	}
+
+	// .blog__item
+
+	&__item {
+		margin-bottom: 80px;
+	}
+
+	// .blog__item-img
+
+	&__item-img {
+		max-width: 730px;
+	}
+
+	// .blog__item-info
+
+	&__item-info {
+		padding: 25px 0 10px;
+		font-weight: 600;
+		font-size: 14px;
+		color: #707070;
+		a {
+			color: inherit;
+		}
+	}
+
+	// .blog__item-data
+
+	&__item-data {
+	}
+
+	// .blog__item-author
+
+	&__item-author {
+	}
+
+	// .blog__item-theme
+
+	&__item-theme {
+	}
+
+	// .blog__item-title
+
+	&__item-title {
+		font-size: 24px;
+		line-height: 38px;
+		margin-bottom: 6px;
+		color: $title;
+		@extend %title-font;
+	}
+
+	// .blog__item-text
+
+	&__item-text {
+	}
+
+	// .blog__blockquote
+
+	&__blockquote {
+		background: rgba(223, 223, 223, 0.5);
+		margin-bottom: 50px;
+		padding: 54px 64px;
+		font-style: italic;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 38px;
+		text-align: center;
+	}
+
+	// .blog__blockquote-author
+
+	&__blockquote-author {
+		font-size: 16px;
+		line-height: 22px;
+		font-style: normal;
+		color: $title;
+		@extend %title-font;
+		margin-top: 23px;
+		padding-top: 23px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 1px;
+			width: 200px;
+			background-color: #6d7278;
+			margin: 0 auto;
+			border-radius: 1px;
+		}
+	}
+
+	// .blog__item-popup
+
+	&__item-popup {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+.article-popup {
+	// .article-popup__box
+
+	&__box {
+		position: relative;
+	}
+}
+.about {
+	// .about__popup-imgbtn
+
+	&__popup-imgbtn {
+	}
+}
+.article-slider {
+	// .article-slider__box
+
+	&__box {
+	}
+
+	// .article-slider__img
+
+	&__img {
+	}
+
+	&__arrow {
+		padding: 0;
+		border: none;
+		background: transparent;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 10;
+		cursor: pointer;
+	}
+
+	&__arrow-left {
+		left: 16px;
+	}
+	&__arrow-right {
+		right: 16px;
+	}
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	// .pagination__arrow
+
+	&__arrow {
+	}
+
+	&__arrow--disabled {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	// .pagination__arrow-icon
+
+	&__arrow-icon {
+	}
+
+	// .pagination__list
+
+	&__list {
+		display: flex;
+		gap: 12px;
+	}
+
+	// .pagination__list-item
+
+	&__list-item {
+	}
+
+	// .pagination__list-num
+
+	&__list-num {
+		font-weight: 600;
+		font-size: 14px;
+		color: #707070;
+	}
+
+	// .pagination__list-num--active
+
+	&__list-num--active {
+		color: $title;
+	}
+}

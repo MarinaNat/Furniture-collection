@@ -1,0 +1,141 @@
+.header {
+	// .header__inner
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 120px;
+	}
+
+	// .header__btn
+
+	&__btn {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+	}
+
+	&__btn-menu {
+		display: none;
+	}
+}
+.container {
+}
+.menu {
+	padding-right: 15px;
+	// .menu__list
+
+	&__list {
+		display: flex;
+		// gap: 0 80px;
+	}
+
+	// .menu__list-item
+
+	&__list-item {
+		padding-left: 35px;
+		padding-right: 45px;
+	}
+
+	// .menu__list-link
+
+	&__list-link {
+		@extend %title-font;
+		color: rgba(54, 56, 56, 0.9);
+		line-height: 22px;
+	}
+
+	&__list-link--active {
+		padding-bottom: 4px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 2px;
+			border-radius: 1px;
+			background-color: rgba($title, 0.7);
+		}
+	}
+}
+.logo {
+	margin: 0 auto;
+}
+
+.rightside-menu {
+	box-shadow: -1px 0px 20px 1px #000;
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	max-width: 694px;
+	background-color: #fff;
+	padding-top: 40px;
+	transition: all 0.6s;
+	z-index: 11;
+	&.rightside-menu--close {
+		transform: translateX(500%);
+	}
+	// .rightside-menu__close
+
+	&__close {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		margin-left: 50px;
+		margin-bottom: 60px;
+	}
+
+	// .rightside-menu__content
+
+	&__content {
+		text-align: center;
+		max-width: 485px;
+		margin: 0 auto;
+	}
+
+	&__logo {
+		display: inline-block;
+		margin-bottom: 40px;
+	}
+	// .rightside-menu__title
+
+	&__title {
+		color: $title;
+		@extend %title-font;
+		font-size: 36px;
+		line-height: 51px;
+		position: relative;
+		margin-bottom: 17px;
+		padding-bottom: 12px;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			max-width: 252px;
+			margin: 0 auto;
+			height: 1px;
+			background: #6d7278;
+		}
+	}
+
+	// .rightside-menu__text
+
+	&__text {
+		margin-bottom: 70px;
+	}
+
+	// .rightside-menu__images
+
+	&__images {
+		max-width: 485px;
+	}
+}
